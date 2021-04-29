@@ -139,7 +139,7 @@ public:
         //mutex.lock();
         cv::Mat img = *img_;
         //mutex.unlock();
-        Sleeper().sleep(1000); //imitate the time cost operation;
+        //Sleeper().sleep(1000); //imitate the time cost operation;
         *rect_ = cv::Mat();// = obejectDetection(img_);
 
         std::chrono::steady_clock::time_point t1=std::chrono::steady_clock::now();
